@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
-import SupplierBg from "/public/SupplierBg.png";
 
 const ToastPopup = ({ message, success }) => {
   return createPortal(
@@ -76,7 +75,7 @@ const AddSupplierForm = () => {
       <div
         className="fixed inset-0 z-[998]"
         style={{
-          backgroundImage: `url(${SupplierBg})`,
+          backgroundImage: `url("https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657714/SupplierBg_rsfoch.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

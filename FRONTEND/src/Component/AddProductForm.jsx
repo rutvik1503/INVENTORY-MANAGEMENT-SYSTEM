@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
-import LogoImg from "/Public/Logo.png";
 import { createPortal } from "react-dom";
 
 const AddProductForm = () => {
@@ -167,7 +166,7 @@ const AddProductForm = () => {
         {/* Logo + Main Title */}
         <div className="flex items-center gap-4">
           <img
-            src={LogoImg}
+            src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png"
             alt="BlueShelf Logo"
             className="w-16 h-16 md:w-20 md:h-20"
           />

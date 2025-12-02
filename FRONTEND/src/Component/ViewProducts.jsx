@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import LogoImg from "/public/Logo.png";
 
 const ViewProduct = () => {
   const { id } = useParams();
@@ -84,7 +83,7 @@ const ViewProduct = () => {
       {/* ---- LOGO + TITLE + Buttons ---- */}
       <div className="flex flex-col md:flex-row items-center md:justify-between gap-4 mb-8">
         <div className="flex items-center gap-4">
-          <img src={LogoImg} className="w-[70px] h-[70px]" />
+          <img src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png" className="w-[70px] h-[70px]" />
           <div>
             <h1 className="text-3xl font-extrabold text-[#00d4ff] tracking-wide">
               BlueShelf Inventory

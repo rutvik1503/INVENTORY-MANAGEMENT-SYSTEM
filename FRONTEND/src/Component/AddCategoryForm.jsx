@@ -88,7 +88,7 @@ const AddCategoryForm = () => {
       <div
         className="fixed inset-0 z-[998]"
         style={{
-          backgroundImage: `url(${CategoryBg})`,
+          backgroundImage: `url("https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657714/CategoryBg_zdkgss.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import LogoImg from "/public/Logo.png";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -138,7 +137,7 @@ const HomePage = () => {
       {/* ---- LOGO + TITLE + LOGOUT ---- */}
       <div className="flex flex-col md:flex-row items-center md:justify-between gap-4 mb-6">
         <div className="flex items-center gap-4">
-          <img src={LogoImg} className="w-[70px] h-[70px]" />
+          <img src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png" className="w-[70px] h-[70px]" />
           <div>
             <h1 className="text-3xl font-extrabold text-[#3d87e0] tracking-wide">
               BlueShelf Inventory
