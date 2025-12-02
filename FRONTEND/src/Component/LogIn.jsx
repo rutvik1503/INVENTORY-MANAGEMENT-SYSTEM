@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"; // include useEffect
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import LogoImg from "/public/Logo.png";
+// import LogoImg from "/public/Logo.png";
 
 const LogIn = () => {
   const [email, setEmail] = useState("");
@@ -57,7 +57,7 @@ const LogIn = () => {
     <div className="w-full h-screen inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.99)] via-[rgba(0,0,0,0.9)] to-transparent p-[25px] flex justify-start items-center relative">
       {/* Logo */}
       <div className="absolute top-[25px] left-[25px] z-50 p-[5px]">
-        <img src={LogoImg} className="w-[50px] h-[50px]" />
+        <img src="/Logo.png" className="w-[50px] h-[50px]" />
       </div>
 
       {/* Toast Message */}
