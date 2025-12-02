@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "6929656645382280f7b1ede5"
+  },
+  "challanDate": {
+    "$date": "2025-11-30T00:00:00.000Z"
+  },
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "subCategory": {
+    "$oid": "6926d6b0868ba7a6bb88484b"
+  },
+  "itemName": "Raymond Pant Fabric",
+  "hsnCode": "HSN-0006",
+  "color": "Navy Blue",
+  "fabricType": "Semi Cotton Plain",
+  "pattern": "Plain",
+  "width": "2.5",
+  "gsm": 125,
+  "unit": "350",
+  "grossQty": 150,
+  "tareWeight": 0.25,
+  "price": 250,
+  "gst": 10,
+  "supplier": {
+    "$oid": "6926da64118549e3466cb0b4"
+  },
+  "isJobWork": false,
+  "jobWorkDetails": {
+    "partyName": "",
+    "jobWorkRate": null,
+    "issueDate": null,
+    "expectedReturnDate": null,
+    "quantitySent": null
+  },
+  "remarks": "Raymond plain pant fabric with navy blue color",
+  "createdAt": {
+    "$date": "2025-11-28T09:03:34.908Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-28T09:03:34.908Z"
+  },
+  "srNo": 6,
+  "challanNo": "CH0006",
+  "lotNo": "LOT0006",
+  "netQty": 149.75,
+  "totalAmount": 37437.5,
+  "gstAmount": 3743.75,
+  "finalAmount": 41181.25,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "692968c745382280f7b1edff"
+  },
+  "challanDate": {
+    "$date": "2025-11-29T00:00:00.000Z"
+  },
+  "category": {
+    "$oid": "6926d53a868ba7a6bb884821"
+  },
+  "subCategory": {
+    "$oid": "6926d579868ba7a6bb884825"
+  },
+  "itemName": "Punjabi Suit Fabric",
+  "hsnCode": "HSN-0007",
+  "color": "Black",
+  "fabricType": "Cotton",
+  "pattern": "Embroidered",
+  "width": "5 Mtr.",
+  "gsm": 150,
+  "unit": "120",
+  "grossQty": 125,
+  "tareWeight": 0.2,
+  "price": 10,
+  "gst": 1,
+  "supplier": {
+    "$oid": "6926db7d118549e3466cb0c2"
+  },
+  "isJobWork": false,
+  "jobWorkDetails": {
+    "partyName": "",
+    "jobWorkRate": null,
+    "issueDate": null,
+    "expectedReturnDate": null,
+    "quantitySent": null
+  },
+  "remarks": "",
+  "createdAt": {
+    "$date": "2025-11-28T09:17:59.100Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-28T09:17:59.100Z"
+  },
+  "srNo": 7,
+  "challanNo": "CH0007",
+  "lotNo": "LOT0007",
+  "netQty": 124.8,
+  "totalAmount": 1248,
+  "gstAmount": 12.48,
+  "finalAmount": 1260.48,
+  "__v": 0
+}]

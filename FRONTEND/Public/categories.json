@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "6926d4fc868ba7a6bb884819"
+  },
+  "name": "Saree",
+  "createdAt": {
+    "$date": "2025-11-26T10:22:52.303Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:22:52.303Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926d53a868ba7a6bb884821"
+  },
+  "name": "Dress Material",
+  "createdAt": {
+    "$date": "2025-11-26T10:23:54.328Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:23:54.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926d584868ba7a6bb884829"
+  },
+  "name": "Kurti Fabric",
+  "createdAt": {
+    "$date": "2025-11-26T10:25:08.553Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:25:08.553Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "name": "Shirt Fabric",
+  "createdAt": {
+    "$date": "2025-11-26T10:27:33.865Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:27:33.865Z"
+  },
+  "__v": 0
+}]

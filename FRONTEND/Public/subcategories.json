@@ -1,0 +1,528 @@
+[{
+  "_id": {
+    "$oid": "6926d52f868ba7a6bb88481b"
+  },
+  "name": "Silk Saree",
+  "category": {
+    "$oid": "6926d4fc868ba7a6bb884819"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d52f868ba7a6bb88481c"
+  },
+  "name": "Cotton Saree",
+  "category": {
+    "$oid": "6926d4fc868ba7a6bb884819"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d52f868ba7a6bb88481d"
+  },
+  "name": "Bandhani Saree",
+  "category": {
+    "$oid": "6926d4fc868ba7a6bb884819"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d52f868ba7a6bb88481e"
+  },
+  "name": "Chiffon Saree",
+  "category": {
+    "$oid": "6926d4fc868ba7a6bb884819"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d52f868ba7a6bb88481f"
+  },
+  "name": "Kanjivaram Saree",
+  "category": {
+    "$oid": "6926d4fc868ba7a6bb884819"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:23:43.238Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d579868ba7a6bb884823"
+  },
+  "name": "Rayon Printed",
+  "category": {
+    "$oid": "6926d53a868ba7a6bb884821"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:24:57.191Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:24:57.191Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d579868ba7a6bb884824"
+  },
+  "name": "Cotton Unstichhed",
+  "category": {
+    "$oid": "6926d53a868ba7a6bb884821"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:24:57.191Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:24:57.191Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d579868ba7a6bb884825"
+  },
+  "name": "Punjabi Suit Material",
+  "category": {
+    "$oid": "6926d53a868ba7a6bb884821"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:24:57.192Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:24:57.192Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d579868ba7a6bb884826"
+  },
+  "name": "Embroidered Dress Material",
+  "category": {
+    "$oid": "6926d53a868ba7a6bb884821"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:24:57.192Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:24:57.192Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d579868ba7a6bb884827"
+  },
+  "name": "Digital Print Dress Material",
+  "category": {
+    "$oid": "6926d53a868ba7a6bb884821"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:24:57.192Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:24:57.192Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d5bb868ba7a6bb88482b"
+  },
+  "name": "Rayon Kurti Fabric",
+  "category": {
+    "$oid": "6926d584868ba7a6bb884829"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d5bb868ba7a6bb88482c"
+  },
+  "name": "Printed Kurti Fabric",
+  "category": {
+    "$oid": "6926d584868ba7a6bb884829"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d5bb868ba7a6bb88482d"
+  },
+  "name": "Cotton Kurti Fabric",
+  "category": {
+    "$oid": "6926d584868ba7a6bb884829"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d5bb868ba7a6bb88482e"
+  },
+  "name": "Embroidered Kurti Fabric",
+  "category": {
+    "$oid": "6926d584868ba7a6bb884829"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d5bb868ba7a6bb88482f"
+  },
+  "name": "Slub Cotton Kurti Fabric",
+  "category": {
+    "$oid": "6926d584868ba7a6bb884829"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:26:03.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb88483b"
+  },
+  "name": "Cotton Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.296Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.296Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb88483c"
+  },
+  "name": "Linen Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb88483d"
+  },
+  "name": "Poly Cotton Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb88483e"
+  },
+  "name": "Oxford Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb88483f"
+  },
+  "name": "Chambray Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb884840"
+  },
+  "name": "Check Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb884841"
+  },
+  "name": "Stripe Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d657868ba7a6bb884842"
+  },
+  "name": "Denim Shirt Fabric",
+  "category": {
+    "$oid": "6926d615868ba7a6bb884839"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:28:39.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb884846"
+  },
+  "name": "Terry Rayon Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb884847"
+  },
+  "name": "Cotton Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb884848"
+  },
+  "name": "Linen Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb884849"
+  },
+  "name": "Polyester Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb88484a"
+  },
+  "name": "Twill Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb88484b"
+  },
+  "name": "Formal Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb88484c"
+  },
+  "name": "Stretch Type Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926d6b0868ba7a6bb88484d"
+  },
+  "name": "Denim Pant Fabric",
+  "category": {
+    "$oid": "6926d661868ba7a6bb884844"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:30:08.685Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69296cd545382280f7b1ee1e"
+  },
+  "name": "Dulhan Lahenga ",
+  "category": {
+    "$oid": "69296cc445382280f7b1ee1c"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-28T09:35:17.695Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-28T09:35:17.695Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69296cd545382280f7b1ee1f"
+  },
+  "name": "Sider Lahenga",
+  "category": {
+    "$oid": "69296cc445382280f7b1ee1c"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-28T09:35:17.696Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-28T09:35:17.696Z"
+  }
+}]

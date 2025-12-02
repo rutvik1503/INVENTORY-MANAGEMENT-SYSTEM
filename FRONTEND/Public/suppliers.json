@@ -1,0 +1,198 @@
+[{
+  "_id": {
+    "$oid": "6926da3e118549e3466cb0b2"
+  },
+  "name": "Shree Textiles",
+  "mobile": "9876543210",
+  "email": "contact@shreetextiles.in",
+  "address": "MG Road, Mumbai, Maharashtra",
+  "gstNumber": "27AAECS1234F1ZV",
+  "companyName": "Shree Textiles Pvt. Ltd.",
+  "createdAt": {
+    "$date": "2025-11-26T10:45:18.568Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:45:18.568Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926da64118549e3466cb0b4"
+  },
+  "name": "Kumar Fabrics",
+  "mobile": "9123456780",
+  "email": "info@kumarfabrics.com",
+  "address": "Chowringhee, Kolkata, West Bengal",
+  "gstNumber": "19AAECK5678K1Z9",
+  "companyName": "Kumar Fabrics Co.",
+  "createdAt": {
+    "$date": "2025-11-26T10:45:56.269Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:45:56.269Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926da93118549e3466cb0b6"
+  },
+  "name": "Raja Traders",
+  "mobile": "9988776655",
+  "email": "raja.traders@gmail.com",
+  "address": "Connaught Place, New Delhi",
+  "gstNumber": "07AAECR2345P1Z2",
+  "companyName": "Raja Traders",
+  "createdAt": {
+    "$date": "2025-11-26T10:46:43.634Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:46:43.634Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926dab6118549e3466cb0b8"
+  },
+  "name": "Sanghvi Textiles",
+  "mobile": "9876123456",
+  "email": "sales@sanghvitextiles.in",
+  "address": "Ashram Road, Ahmedabad, Gujarat",
+  "gstNumber": "24AABCS9876D1ZQ",
+  "companyName": "Sanghvi Textiles Pvt. Ltd.",
+  "createdAt": {
+    "$date": "2025-11-26T10:47:18.999Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:47:18.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926dada118549e3466cb0ba"
+  },
+  "name": "Royal Fabrics",
+  "mobile": "9101122334",
+  "email": "royalfabrics@gmail.com",
+  "address": "MG Road, Bengaluru, Karnataka",
+  "gstNumber": "29AAHCR3456L1Z7",
+  "companyName": "Royal Fabrics Co.",
+  "createdAt": {
+    "$date": "2025-11-26T10:47:54.032Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:47:54.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926dafd118549e3466cb0bc"
+  },
+  "name": "Desai Traders",
+  "mobile": "9876541230",
+  "email": "contact@desaitraders.in",
+  "address": "Camp, Pune, Maharashtra",
+  "gstNumber": "27AADCD2345F1ZX",
+  "companyName": "Desai Traders",
+  "createdAt": {
+    "$date": "2025-11-26T10:48:29.714Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:48:29.714Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926db2a118549e3466cb0be"
+  },
+  "name": "Mehta Fabrics",
+  "mobile": "9988997766",
+  "email": "mehta.fabrics@gmail.com",
+  "address": "Manek Chowk, Jaipur, Rajasthan",
+  "gstNumber": "08AAECM1234G1ZY",
+  "companyName": "Mehta Fabrics Co.",
+  "createdAt": {
+    "$date": "2025-11-26T10:49:14.448Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:49:14.448Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926db53118549e3466cb0c0"
+  },
+  "name": "Sri Lakshmi Textiles",
+  "mobile": "9123459876",
+  "email": "info@srilakshmitextiles.in",
+  "address": "T. Nagar, Chennai, Tamil Nadu",
+  "gstNumber": "33AAECS5678J1ZV",
+  "companyName": "Sri Lakshmi Textiles Pvt. Ltd.",
+  "createdAt": {
+    "$date": "2025-11-26T10:49:55.331Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:49:55.331Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926db7d118549e3466cb0c2"
+  },
+  "name": "Patel Fabrics",
+  "mobile": "9876512345",
+  "email": "patelfabrics@gmail.com",
+  "address": "Ashoka Road, Surat, Gujarat",
+  "gstNumber": "24AAECP9876K1ZT",
+  "companyName": "Patel Fabrics Co.",
+  "createdAt": {
+    "$date": "2025-11-26T10:50:37.100Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:50:37.100Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6926dba0118549e3466cb0c4"
+  },
+  "name": "Anand Traders",
+  "mobile": "9001122334",
+  "email": "anand.traders@gmail.com",
+  "address": "MG Road, Kochi, Kerala",
+  "gstNumber": "32AAECA3456L1Z8",
+  "companyName": "Anand Traders",
+  "createdAt": {
+    "$date": "2025-11-26T10:51:12.193Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-26T10:51:12.193Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6929810b370afe3b1016c64c"
+  },
+  "name": "Bharat Textile",
+  "mobile": "7788994455",
+  "email": "bharat.contact@gmail.com",
+  "address": "Mota Varachha, Surat",
+  "gstNumber": "ABCDE1234F",
+  "companyName": "Bharat Textile Ltd.",
+  "createdAt": {
+    "$date": "2025-11-28T11:01:31.579Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-28T11:01:31.579Z"
+  },
+  "__v": 0
+}]
