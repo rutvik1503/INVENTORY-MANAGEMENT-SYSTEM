@@ -53,7 +53,7 @@ const AddSupplierForm = () => {
     }
 
     axios
-      .post("http://localhost:8080/addSupplier", supplierData)
+      .post("https://inventory-management-system-8t3d.onrender.com/addSupplier", supplierData)
       .then(() => {
         showToastHandler("Supplier Added Successfully!", true);
         setSupplierData({

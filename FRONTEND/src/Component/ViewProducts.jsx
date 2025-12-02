@@ -24,13 +24,13 @@ const ViewProduct = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/getProductById/${id}`)
+      .get(`https://inventory-management-system-8t3d.onrender.com/getProductById/${id}`)
       .then((res) => {
         const data = res.data;
         setProduct(data);
 
         if (data.category) {
-          axios.get(`http://localhost:8080/getCategories`)
+          axios.get(`https://inventory-management-system-8t3d.onrender.com/getCategories`)
             .then((catRes) => {
               const cat = catRes.data.find((c) => c._id === data.category);
               setCategoryName(cat ? cat.name : "N/A");
@@ -38,7 +38,7 @@ const ViewProduct = () => {
         }
 
         if (data.subCategory) {
-          axios.get(`http://localhost:8080/getSubCategories/${data.category}`)
+          axios.get(`https://inventory-management-system-8t3d.onrender.com/getSubCategories/${data.category}`)
             .then((subRes) => {
               const sub = subRes.data.find((s) => s._id === data.subCategory);
               setSubCategoryName(sub ? sub.name : "N/A");
@@ -46,7 +46,7 @@ const ViewProduct = () => {
         }
 
         if (data.supplier) {
-          axios.get(`http://localhost:8080/getSuppliers`)
+          axios.get(`https://inventory-management-system-8t3d.onrender.com/getSuppliers`)
             .then((supRes) => {
               const sup = supRes.data.find((s) => s._id === data.supplier);
               setSupplierName(sup ? sup.name : "N/A");

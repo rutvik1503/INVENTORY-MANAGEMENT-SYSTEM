@@ -65,10 +65,10 @@ const AddProductForm = () => {
   // Fetch Categories & Suppliers
   useEffect(() => {
     axios
-      .get("http://localhost:8080/getCategories")
+      .get("https://inventory-management-system-8t3d.onrender.com/getCategories")
       .then((res) => setCategories(res.data));
     axios
-      .get("http://localhost:8080/getSuppliers")
+      .get("https://inventory-management-system-8t3d.onrender.com/getSuppliers")
       .then((res) => setSuppliers(res.data));
   }, []);
 
@@ -76,7 +76,7 @@ const AddProductForm = () => {
   useEffect(() => {
     if (categoryId) {
       axios
-        .get(`http://localhost:8080/getSubCategories/${categoryId}`)
+        .get(`https://inventory-management-system-8t3d.onrender.com/getSubCategories/${categoryId}`)
         .then((res) => setSubCategories(res.data));
     } else {
       setSubCategories([]);
@@ -122,7 +122,7 @@ const AddProductForm = () => {
       // UPDATE
       axios
         .put(
-          `http://localhost:8080/updateProduct/${existingProduct._id}`,
+          `https://inventory-management-system-8t3d.onrender.com/updateProduct/${existingProduct._id}`,
           payload
         )
         .then(() => {
@@ -133,7 +133,7 @@ const AddProductForm = () => {
     } else {
       // ADD
       axios
-        .post("http://localhost:8080/addProduct", payload)
+        .post("https://inventory-management-system-8t3d.onrender.com/addProduct", payload)
         .then(() => {
           showToast("Product Added Successfully!", true);
           setTimeout(() => navigate("/home"), 1000);

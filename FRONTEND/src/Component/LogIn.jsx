@@ -28,7 +28,7 @@ const LogIn = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:8080/logIn", {
+      const res = await axios.post("https://inventory-management-system-8t3d.onrender.com/logIn", {
         email,
         password,
       });

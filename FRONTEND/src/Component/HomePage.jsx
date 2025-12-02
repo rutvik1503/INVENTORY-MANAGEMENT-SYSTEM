@@ -45,7 +45,7 @@ const HomePage = () => {
   // Load all products
   const loadProducts = () => {
     axios
-      .get("http://localhost:8080/getAllProduct")
+      .get("https://inventory-management-system-8t3d.onrender.com/getAllProduct")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   };
@@ -58,7 +58,7 @@ const HomePage = () => {
   const deleteProduct = (id) => {
     showConfirm("Are you sure you want to delete this product?", async () => {
       try {
-        await axios.delete(`http://localhost:8080/deleteProduct/${id}`);
+        await axios.delete(`https://inventory-management-system-8t3d.onrender.com/deleteProduct/${id}`);
         showToast("Product Deleted Successfully!", "success");
         loadProducts();
       } catch (error) {

@@ -43,7 +43,7 @@ const AddCategoryForm = () => {
     }
 
     axios
-      .post("http://localhost:8080/addCategory", { categoryName })
+      .post("https://inventory-management-system-8t3d.onrender.com/addCategory", { categoryName })
       .then((res) => {
         showToastHandler("Category Added Successfully");
         setCategoryId(res.data.categoryId);
@@ -68,7 +68,7 @@ const AddCategoryForm = () => {
     }
 
     axios
-      .post("http://localhost:8080/addSubCategory", {
+      .post("https://inventory-management-system-8t3d.onrender.com/addSubCategory", {
         categoryId,
         subCategories,
       })
