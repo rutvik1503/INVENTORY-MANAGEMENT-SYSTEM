@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const ViewProduct = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -66,7 +69,7 @@ const ViewProduct = () => {
   );
 
   const GlassCard = ({ title, children, pageBreak = false }) => (
-    <div
+    <div data-aos="fade" data-aos-duration="1000"
       className={`p-6 mb-6 bg-[rgba(0,0,0,0.25)] backdrop-blur-md border border-white/20 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 ${
         pageBreak ? "page-break-before print:page-break-before" : ""
       }`}
@@ -81,7 +84,7 @@ const ViewProduct = () => {
   return (
     <div className="min-h-screen p-6 bg-[rgba(0,0,0,0.25)] backdrop-blur-2xl text-white">
       {/* ---- LOGO + TITLE + Buttons ---- */}
-      <div className="flex flex-col md:flex-row items-center md:justify-between gap-4 mb-8">
+      <div data-aos="fade" data-aos-duration="1000" className="flex flex-col md:flex-row items-center md:justify-between gap-4 mb-8">
         <div className="flex items-center gap-4">
           <img src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png" className="w-[70px] h-[70px]" />
           <div>

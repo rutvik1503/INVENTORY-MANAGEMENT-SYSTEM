@@ -3,9 +3,12 @@ import axios from "axios";
 import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const ToastPopup = ({ message, success }) => {
   return createPortal(
-    <div
+    <div data-aos="zoom-in-down" data-aos-duration="600"
       className={`fixed top-[25px] left-1/2 -translate-x-1/2 z-[9999] px-6 py-3 rounded-xl shadow-lg backdrop-blur-md border ${
         success
           ? "bg-[rgba(0,255,0,0.25)] border-green-500 text-white"
@@ -86,7 +89,7 @@ const AddSupplierForm = () => {
       <div className="fixed inset-0 bg-[rgba(0,0,0,0.5)] z-[999] flex items-center justify-center"></div>
 
       {/* Modal form */}
-      <div className="fixed z-[1000] w-[90%] max-w-2xl p-6 backdrop-blur-md rounded-2xl border border-[rgba(255,255,255,0.25)] text-white shadow-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.6)]">
+      <div data-aos="zoom-in-down" data-aos-duration="600" className="fixed z-[1000] w-[90%] max-w-2xl p-6 backdrop-blur-md rounded-2xl border border-[rgba(255,255,255,0.25)] text-white shadow-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.6)]">
         {/* Close Button */}
         <button
           onClick={() => navigate("/addProduct")}

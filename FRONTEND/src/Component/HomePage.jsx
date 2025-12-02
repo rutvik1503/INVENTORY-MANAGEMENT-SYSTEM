@@ -2,7 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const HomePage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+
   const navigate = useNavigate();
 
   const [products, setProducts] = useState([]);
@@ -45,7 +52,9 @@ const HomePage = () => {
   // Load all products
   const loadProducts = () => {
     axios
-      .get("https://inventory-management-system-8t3d.onrender.com/getAllProduct")
+      .get(
+        "https://inventory-management-system-8t3d.onrender.com/getAllProduct"
+      )
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   };
@@ -58,7 +67,9 @@ const HomePage = () => {
   const deleteProduct = (id) => {
     showConfirm("Are you sure you want to delete this product?", async () => {
       try {
-        await axios.delete(`https://inventory-management-system-8t3d.onrender.com/deleteProduct/${id}`);
+        await axios.delete(
+          `https://inventory-management-system-8t3d.onrender.com/deleteProduct/${id}`
+        );
         showToast("Product Deleted Successfully!", "success");
         loadProducts();
       } catch (error) {
@@ -98,6 +109,7 @@ const HomePage = () => {
       {/* ---- Toast + Confirm Popup ---- */}
       {showPopup && (
         <div
+          data-aos="zoom-in-down" data-aos-duration="600"
           className={`fixed top-5 left-1/2 -translate-x-1/2 px-6 py-4 rounded-xl 
       backdrop-blur-md border shadow-xl text-white font-semibold transition-all z-50
       ${
@@ -137,7 +149,10 @@ const HomePage = () => {
       {/* ---- LOGO + TITLE + LOGOUT ---- */}
       <div className="flex flex-col md:flex-row items-center md:justify-between gap-4 mb-6">
         <div className="flex items-center gap-4">
-          <img src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png" className="w-[70px] h-[70px]" />
+          <img
+            src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png"
+            className="w-[70px] h-[70px]"
+          />
           <div>
             <h1 className="text-3xl font-extrabold text-[#3d87e0] tracking-wide">
               BlueShelf Inventory
@@ -157,7 +172,7 @@ const HomePage = () => {
       </div>
 
       {/* ---- SEARCH + ADD BUTTON ---- */}
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
+      <div data-aos="fade" data-aos-duration="1000" className="flex flex-col md:flex-row justify-between items-center gap-4 mb-6">
         <input
           type="text"
           placeholder="Search products..."
@@ -178,7 +193,7 @@ const HomePage = () => {
       </div>
 
       {/* ---- FILTER BUTTONS ---- */}
-      <div className="grid grid-cols-3 gap-3 mb-6">
+      <div data-aos="fade" data-aos-duration="1000" className="grid grid-cols-3 gap-3 mb-6">
         {["all", "jobwork", "nonjobwork"].map((type) => (
           <button
             key={type}
@@ -208,7 +223,7 @@ const HomePage = () => {
       </div>
 
       {/* ---- TABLE ---- */}
-      <div className="overflow-x-auto rounded-xl border border-gray-700">
+      <div data-aos="fade" data-aos-duration="1000" className="overflow-x-auto rounded-xl border border-gray-700">
         <table className="w-full border-collapse text-left">
           <thead>
             <tr

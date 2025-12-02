@@ -3,6 +3,9 @@ import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import { createPortal } from "react-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const AddProductForm = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -65,7 +68,9 @@ const AddProductForm = () => {
   // Fetch Categories & Suppliers
   useEffect(() => {
     axios
-      .get("https://inventory-management-system-8t3d.onrender.com/getCategories")
+      .get(
+        "https://inventory-management-system-8t3d.onrender.com/getCategories"
+      )
       .then((res) => setCategories(res.data));
     axios
       .get("https://inventory-management-system-8t3d.onrender.com/getSuppliers")
@@ -76,7 +81,9 @@ const AddProductForm = () => {
   useEffect(() => {
     if (categoryId) {
       axios
-        .get(`https://inventory-management-system-8t3d.onrender.com/getSubCategories/${categoryId}`)
+        .get(
+          `https://inventory-management-system-8t3d.onrender.com/getSubCategories/${categoryId}`
+        )
         .then((res) => setSubCategories(res.data));
     } else {
       setSubCategories([]);
@@ -133,7 +140,10 @@ const AddProductForm = () => {
     } else {
       // ADD
       axios
-        .post("https://inventory-management-system-8t3d.onrender.com/addProduct", payload)
+        .post(
+          "https://inventory-management-system-8t3d.onrender.com/addProduct",
+          payload
+        )
         .then(() => {
           showToast("Product Added Successfully!", true);
           setTimeout(() => navigate("/home"), 1000);
@@ -148,6 +158,8 @@ const AddProductForm = () => {
       {showToastPopup &&
         createPortal(
           <div
+            data-aos="zoom-in-down"
+            data-aos-duration="600"
             className={`fixed left-1/2 transform -translate-x-1/2 top-[40px] px-6 py-3 rounded-lg shadow-lg font-semibold text-white
         backdrop-blur-md border border-white/30 z-[9999]
         transition-all duration-300
@@ -186,7 +198,7 @@ const AddProductForm = () => {
         </h2>
       </div>
       {/* Product Details */}
-      <div className="w-full grid grid-cols-4 gap-[20px] items-start p-[20px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)]">
+      <div data-aos="fade" data-aos-duration="1000" className="w-full grid grid-cols-4 gap-[20px] items-start p-[20px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)]">
         <div className="w-full col-span-4">
           <h2 className="text-[#3d87e0] text-2xl md:text-3xl font-extrabold tracking-wide">
             Product Details
@@ -459,7 +471,7 @@ const AddProductForm = () => {
         </div>
       </div>
       {/* Product Specifications Section */}
-      <div className="w-full grid grid-cols-4 gap-[20px] items-start p-[20px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)]">
+      <div data-aos="fade" data-aos-duration="1000" className="w-full grid grid-cols-4 gap-[20px] items-start p-[20px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)]">
         {/* Header */}
         <div className="w-full col-span-4 mb-4">
           <h2 className="text-[#3d87e0] text-2xl md:text-3xl font-extrabold tracking-wide">
@@ -635,7 +647,7 @@ const AddProductForm = () => {
         
       </div> */}
       {/* Auto-generated fields (readonly) */}
-      <div className="w-full grid grid-cols-4 gap-[20px] items-start p-[15px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)]">
+      <div data-aos="fade" data-aos-duration="1000" className="w-full grid grid-cols-4 gap-[20px] items-start p-[15px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)]">
         {/* Seriel No */}
         <div className="flex w-full flex-col justify-center items-start gap-[10px]">
           <label
@@ -724,7 +736,7 @@ const AddProductForm = () => {
         </div>
       </div>
       {/* Supplier, Remarks & Job Work Section */}
-      <div className="w-full grid grid-cols-4 gap-[20px] items-start p-[20px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)] mt-6">
+      <div data-aos="fade" data-aos-duration="1000" className="w-full grid grid-cols-4 gap-[20px] items-start p-[20px] bg-[rgba(255,255,255,0.02)] border rounded-[15px] border-[rgba(255,255,255,0.25)] mt-6">
         {/* Header */}
         <div className="w-full col-span-4 mb-4">
           <h2 className="text-[#3d87e0] text-2xl md:text-3xl font-extrabold tracking-wide">
@@ -857,7 +869,7 @@ const AddProductForm = () => {
 
           {/* Job Work Fields Card */}
           {productData.isJobWork && (
-            <div className="w-full mt-[15px] bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.25)] rounded-lg p-4 grid grid-cols-2 gap-[20px]">
+            <div data-aos="fade-down" data-aos-duration="600" className="w-full mt-[15px] bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.25)] rounded-lg p-4 grid grid-cols-2 gap-[20px]">
               <h3 className="col-span-2 text-[#3d87e0] font-semibold text-xl mb-2">
                 Job Work Details
               </h3>

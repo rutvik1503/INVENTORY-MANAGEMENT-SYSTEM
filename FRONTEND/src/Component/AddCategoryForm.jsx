@@ -3,9 +3,14 @@ import axios from "axios";
 import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const ToastPopup = ({ message, success }) => {
   return createPortal(
     <div
+      data-aos="zoom-in-down"
+      data-aos-duration="600"
       className={`fixed top-[25px] left-1/2 -translate-x-1/2 z-[9999] px-6 py-3 rounded-xl shadow-lg backdrop-blur-md border ${
         success
           ? "bg-[rgba(0,255,0,0.25)] border-green-500 text-white"
@@ -43,7 +48,10 @@ const AddCategoryForm = () => {
     }
 
     axios
-      .post("https://inventory-management-system-8t3d.onrender.com/addCategory", { categoryName })
+      .post(
+        "https://inventory-management-system-8t3d.onrender.com/addCategory",
+        { categoryName }
+      )
       .then((res) => {
         showToastHandler("Category Added Successfully");
         setCategoryId(res.data.categoryId);
@@ -68,10 +76,13 @@ const AddCategoryForm = () => {
     }
 
     axios
-      .post("https://inventory-management-system-8t3d.onrender.com/addSubCategory", {
-        categoryId,
-        subCategories,
-      })
+      .post(
+        "https://inventory-management-system-8t3d.onrender.com/addSubCategory",
+        {
+          categoryId,
+          subCategories,
+        }
+      )
       .then(() => {
         showToastHandler("Sub Categories Added Successfully");
         setSubCategories([""]);
@@ -87,7 +98,7 @@ const AddCategoryForm = () => {
       <div
         className="fixed inset-0 z-[998]"
         style={{
-          backgroundImage: `url("https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657714/CategoryBg_zdkgss.png")`,
+          backgroundImage: `url("https://res.cloudinary.com/dwx0y39ww/image/upload/v1764660903/CategoryBg_dtkg7x.png")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -95,17 +106,11 @@ const AddCategoryForm = () => {
       ></div>
 
       {/* Modal overlay */}
-      <div
-        className="fixed inset-0 bg-[rgba(0,0,0,0.5)] z-[999] flex items-center justify-center"
-      ></div>
+      <div className="fixed inset-0 bg-[rgba(0,0,0,0.5)] z-[999] flex items-center justify-center"></div>
 
       {/* Modal form */}
-      <div
-        className="fixed z-[1000] w-[90%] max-w-xl p-6 backdrop-blur-md rounded-2xl border border-[rgba(255,255,255,0.25)] text-white shadow-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.6)]"
-      >
-        <h2 className="text-2xl font-bold text-[#3d87e0] mb-4">
-          Add Category
-        </h2>
+      <div data-aos="zoom-in-down" data-aos-duration="600" className="fixed z-[1000] w-[90%] max-w-xl p-6 backdrop-blur-md rounded-2xl border border-[rgba(255,255,255,0.25)] text-white shadow-lg top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.6)]">
+        <h2 className="text-2xl font-bold text-[#3d87e0] mb-4">Add Category</h2>
 
         {/* Category Input */}
         <div className="mb-4 flex flex-col gap-2">
@@ -137,9 +142,7 @@ const AddCategoryForm = () => {
             </h3>
             {subCategories.map((sub, index) => (
               <div key={index} className="flex flex-col mb-2">
-                <label className="font-medium">
-                  Sub Category {index + 1}
-                </label>
+                <label className="font-medium">Sub Category {index + 1}</label>
                 <input
                   type="text"
                   placeholder={`Sub Category ${index + 1}`}
@@ -176,7 +179,9 @@ const AddCategoryForm = () => {
       </div>
 
       {/* Toast Popup */}
-      {showToast && <ToastPopup message={toastMessage} success={toastSuccess} />}
+      {showToast && (
+        <ToastPopup message={toastMessage} success={toastSuccess} />
+      )}
     </>,
     document.body
   );

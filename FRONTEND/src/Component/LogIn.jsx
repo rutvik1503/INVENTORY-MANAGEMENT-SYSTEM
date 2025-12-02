@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react"; // include useEffect
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -9,6 +12,10 @@ const LogIn = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   // ✅ useEffect must be at top level
   useEffect(() => {
@@ -18,7 +25,7 @@ const LogIn = () => {
       localStorage.removeItem("token");
       showToast("You are logged out for security reason !", false);
       console.log("Token removed due to visiting login page");
-    } 
+    }
   }, []);
 
   const handleSubmit = async () => {
@@ -28,10 +35,13 @@ const LogIn = () => {
     }
 
     try {
-      const res = await axios.post("https://inventory-management-system-8t3d.onrender.com/logIn", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://inventory-management-system-8t3d.onrender.com/logIn",
+        {
+          email,
+          password,
+        }
+      );
 
       const success = !!res.data.superToken;
       showToast(res.data.message, success);
@@ -56,12 +66,17 @@ const LogIn = () => {
     <div className="w-full h-screen inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.99)] via-[rgba(0,0,0,0.9)] to-transparent p-[25px] flex justify-start items-center relative">
       {/* Logo */}
       <div className="absolute top-[25px] left-[25px] z-50 p-[5px]">
-        <img src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png" className="w-[50px] h-[50px]" />
+        <img
+          src="https://res.cloudinary.com/dwx0y39ww/image/upload/v1764657357/Logo_d9mbbn.png"
+          className="w-[50px] h-[50px]"
+        />
       </div>
 
       {/* Toast Message */}
       {showPopup && (
         <div
+          data-aos="zoom-in-down"
+          data-aos-duration="600"
           className={`fixed top-5 left-1/2 -translate-x-1/2 px-5 py-3 
     rounded-xl backdrop-blur-md border 
     shadow-xl text-white font-semibold transition-all
@@ -76,7 +91,10 @@ const LogIn = () => {
       )}
 
       {/* Login Form */}
-      <div className="w-[30%] flex flex-col gap-[15px] items-start p-[15px]">
+      <div
+        className="w-[30%] flex flex-col gap-[15px] items-start p-[15px]"
+        data-aos="zoom-in-right"
+      >
         <h1 className="text-white font-light text-[15px] mb-[20px]">
           Welcome Back{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 uppercase text-[35px] tracking-[0.5px] font-extrabold">
