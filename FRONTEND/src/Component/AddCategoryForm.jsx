@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
-import CategoryBg from "/public/CategoryBg.png";
 
 const ToastPopup = ({ message, success }) => {
   return createPortal(
